@@ -28,21 +28,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/main/webapp/html/images/Koala.jpeg</name>
-			<type>1</type>
-			<location>C:/Users/user/Desktop/Koala.jpeg</location>
-		</link>
-		<link>
-			<name>src/main/webapp/html/images/Penguins.jpg</name>
-			<type>1</type>
-			<location>C:/Users/user/Desktop/Penguins.jpg</location>
-		</link>
-		<link>
-			<name>src/main/webapp/html/images/Tulips.jpg</name>
-			<type>1</type>
-			<location>C:/Users/user/Desktop/Tulips.jpg</location>
-		</link>
-	</linkedResources>
 </projectDescription>
