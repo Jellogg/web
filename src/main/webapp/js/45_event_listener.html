@@ -41,14 +41,14 @@ div {
 	document.getElementById("btn2").onclick=eventHandleTwo;
 	
 	//Node(Element) 객체로 addEventListener() 메소드를 호출하여 이벤트 처리 함수 등록
-	// => Node(Element) 객체의 addEventListener() 메소드를 사용하면 다수의 이벤트 처리 함수 등록 가능
+	// > Node(Element) 객체의 addEventListener() 메소드를 사용하면 다수의 이벤트 처리 함수 등록 가능
 	document.getElementById("btn3").addEventListener("click", eventHandleOne);
 	document.getElementById("btn3").addEventListener("click", eventHandleTwo);
 	
 	//Node.addEventListener(eventName, callback[, useCapture])를 이용하여 이벤트 처리 함수 등록
-	// => addEventListener() 메소드를 호출할 때 useCapture 매개변수를 이용하면 캐쳐링 또는
+	// > addEventListener() 메소드를 호출할 때 useCapture 매개변수를 이용하면 캐쳐링 또는
 	//버블링 단계에서 콜백함수를 호출하여 이벤트 처리 명령 실행 가능
-	// => useCapture 매개변수에 [false]를 전달하면 버블링 단계에서 콜백함수를 호출하여 이벤트 처리
+	// > useCapture 매개변수에 [false]를 전달하면 버블링 단계에서 콜백함수를 호출하여 이벤트 처리
 	//명령을 실행하고 [true]를 전달하면 캐쳐링 단계에서 콜백함수를 호출하여 이벤트 처리
 	document.getElementById("red").addEventListener("click", function() {
 		//event.currentTarget : 이벤트가 발생된 태그에 대한 Element 객체를 저장한 프로퍼티

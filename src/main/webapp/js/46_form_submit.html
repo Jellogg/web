@@ -25,12 +25,12 @@
 	document.getElementById("addBtn").onclick=function() {
 		count++;
 		
-		var newItem=document.createElement("div");//<div></div>
-		newItem.setAttribute("id", "item_"+count);//<div id="item_XXX"></div>
+		var newItem=document.createElement("div"); //<div></div>
+		newItem.setAttribute("id", "item_"+count); //<div id="item_XXX"></div>
 	
 		var html="아이템["+count+"]&nbsp;&nbsp;<button type='button' onclick='removeItem("+count+");'>삭제</button>";
 	
-		newItem.innerHTML=html;//<div id="item_XXX">아이템[XXX][삭제]</div>
+		newItem.innerHTML=html; //<div id="item_XXX">아이템[XXX][삭제]</div>
 		
 		//div 태그(itemListDiv)의 마지막 자식태그로 생성된 태그를 배치 - 출력
 		document.getElementById("itemListDiv").appendChild(newItem);

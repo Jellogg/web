@@ -38,8 +38,8 @@
 	
 	<script type="text/javascript">
 	//form 태그와 입력태그의 name 속성값을 이용하여 Node(Element 객체)로 표현 가능
-	//alert(loginForm);//[object HTMLFormElement]
-	//alert(loginForm.id);//[object HTMLInputElement]
+	//alert(loginForm); //[object HTMLFormElement]
+	//alert(loginForm.id); //[object HTMLInputElement]
 	
 	//InputElement.focus() : 입력태그에 입력촛점을 제공하는 메소드
 	loginForm.id.focus();
@@ -47,7 +47,7 @@
 	document.getElementById("loginBtn").onclick=function() {
 		//사용자 입력값 검증
 		//InputElement.value : 입력태그의 사용자 입력값이 저장된 프로퍼티
-		if(loginForm.id.value=="") {//아이디 입력값이 없는 경우
+		if(loginForm.id.value=="") { // 아이디 입력값이 없는 경우
 			alert("아이디를 입력해 주세요.");
 			loginForm.id.focus();
 			return;//이벤트 처리 함수 종료 - form 태그 미실행
