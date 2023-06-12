@@ -16,8 +16,8 @@
 	
 	<script type="text/javascript">
 	//선택자에 의해 다수의 태그가 검색되면 태그의 갯수만큼 jQuery 객체를 생성하여 메소드 호출
-	// => 묵시적 반복 : 검색된 태그를 모두 jQuery 객체로 생성하여 메소드를 반복적으로 호출
-	// => 검색된 모든 태그에 동일한 기능 구현
+	// > 묵시적 반복 : 검색된 태그를 모두 jQuery 객체로 생성하여 메소드를 반복적으로 호출
+	// > 검색된 모든 태그에 동일한 기능 구현
 	//$("h3").css("color", "red");
 	
 	/*
@@ -32,7 +32,7 @@
 	/*
 	var color=["red","green","blue","orange","lime"];
 	//$(selector).size() : 선택자로 검색된 태그의 갯수를 반환하는 메소드
-	// => jQuery 3.0 이상부터는 size() 메소드 대신 length 프로퍼티를 사용하여 태그의 갯수를 제공받아 사용
+	// > jQuery 3.0 이상부터는 size() 메소드 대신 length 프로퍼티를 사용하여 태그의 갯수를 제공받아 사용
 	for(i=0;i<$("h3").length;i++) {
 		$("h3").eq(i).css("color", color[i]);
 	}
@@ -41,8 +41,7 @@
 	var color=["red","green","blue","orange","lime"];
 	//$(selector).each(callback([index][, element])) : 선택자로 검색된 태그의 갯수만큼 
 	//콜백함수 반복적으로 호출하는 메소드 - 명시적 반복
-	// => 콜백함수의 매개변수에는 검색된 태그의 첨자와 태그의 Node(Element) 객체가 저장되어 
-	//콜백함수에서 사용 가능
+	// > 콜백함수의 매개변수에는 검색된 태그의 첨자와 태그의 Node(Element) 객체가 저장되어 콜백함수에서 사용 가능
 	$("h3").each(function(i, element) {
 		//$("h3").eq(i).css("color", color[i]);
 		
@@ -50,7 +49,7 @@
 		//$(element).css("color", color[i]);
 		
 		//this : 콜백함수에서 처리중인 태그의 Node(Element) 객체를 표현하기 위한 키워드
-		// => this : 자바스크립트 객체(Element 객체), $(this) : jQuery 객체
+		// > this : 자바스크립트 객체(Element 객체), $(this) : jQuery 객체
 		$(this).css("color", color[i]);
 	});
 	</script>
