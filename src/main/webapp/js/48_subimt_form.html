@@ -44,7 +44,7 @@
 			
 			//이벤트 처리 함수에서 return 명령으로 [false]를 반환하면 이벤트 처리 함수를 
 			//종료하면서 태그의 기본 명령 제거 및 이벤트 전달 중지
-			return false;//form 태그 미실행
+			return false; // form 태그 미실행. // 이벤트가 발생하더라도, form태그가 실행안됨
 		}
 	
 		var idReg=/^[a-zA-Z]\w{5,19}$/g;
